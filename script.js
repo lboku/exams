@@ -15,7 +15,6 @@
 // let object = { name: "John", age: 30 };
 // console.log(typeof (object));
 
-
 // let prglng = ["JavaScript", "Python", "Java"]
 // prglng.push("c++");
 // console.log(prglng);
@@ -102,14 +101,11 @@
 // numbers.copyWithin(0,3)
 // console.log(numbers);
 
-
 // for (let i = 100; i<1000; i++){
 //     console.log(i,10**i )
-    
+
 // }
 // console.log(BigInt(Number.MAX_SAFE_INTEGER**2));
-
-
 
 // console.log(+((parseFloat("150.75GEL") * 0.85)).toFixed(1));
 
@@ -146,7 +142,6 @@
 // console.log(winners);
 
 // console.log([1, [2, 3], [[4, 5], 6]].flat(Infinity));
-
 
 // console.log(["A", "B", "C", "D", "E"].copyWithin(3,0));
 
@@ -185,16 +180,15 @@
 // user.tickets.splice(0,1,"Refunded")
 // console.log(user,event);
 
-// let employee = { 
-//     name: "Anna", 
-//     salary: 1500, 
-//     department: "HR" 
+// let employee = {
+//     name: "Anna",
+//     salary: 1500,
+//     department: "HR"
 // };
 // let dynamicKey = "experience"; // ამ ცვლადით უნდა ჩაამატო ახალი თვისება
 // employee["exp"]=dynamicKey
 // delete employee.department
 // console.log(employee);
-
 
 // console.log(+parseFloat("15.75km/h"));
 // console.log(parseInt("100points"))
@@ -214,7 +208,7 @@
 // console.log(categories.split(","));
 
 // let val1 = "";
-// let val2 = "0"; 
+// let val2 = "0";
 // let val3 = null;
 // let val4 = 120;
 
@@ -228,8 +222,8 @@
 // brand: "MacBook",
 // ram: 16
 // }
-// laptop.year = 2022 
-// let myKey = "color" 
+// laptop.year = 2022
+// let myKey = "color"
 // laptop[myKey]="silver"
 // delete laptop.ram
 // let myWorkLaptop = laptop;
@@ -274,7 +268,7 @@
 //     }
 // }
 // calculator.turnOff = function(){
-//     console.log("კალკულატორი გამოირთო"); 
+//     console.log("კალკულატორი გამოირთო");
 // }
 // calculator.sayHello();
 // calculator.turnOff()
@@ -312,7 +306,7 @@
 // }
 // smartTv.changeChannel = function(){
 //     console.log("არხი შეიცვალა");
-    
+
 // }
 // smartTv.TurnOn()
 // smartTv.changeChannel()
@@ -333,13 +327,12 @@
 // let students = ["Zura", "Nika", "Anna", "Luka", "Tato", "Mariam"];
 
 // let studentInd = students.indexOf("Luka");
-// let newArr =students.splice(studentInd,1) 
+// let newArr =students.splice(studentInd,1)
 // console.log(students);
 // students.sort()
 // let honorStudents= newStudentsArr.slice(0,2)
 // console.log(honorStudents);
 // console.log(honorStudents.reverse());
-
 
 // let queue = ["Nino", "Sandro"];
 // queue.push("luka")
@@ -383,9 +376,9 @@
 // console.log(changeArr);
 
 // let examResults = [55, 95, 72, 88, 45, 100];
-// examResults.sort((a, b) => a - b); 
-// examResults.reverse();            
-// examResults.pop();                
+// examResults.sort((a, b) => a - b);
+// examResults.reverse();
+// examResults.pop();
 // console.log(examResults);
 // console.log(`საუკეთესო შედეგია: ${examResults.at()}`);
 
@@ -419,7 +412,7 @@
 // do{
 //     attempt++
 //     console.log(`ვცდილობ დაკავშირებას... ცდა ნომერი: ${attempt}`);
-  
+
 // }while(attempt<3)
 
 // let myLaptop = {
@@ -429,7 +422,7 @@
 //     os: "macOS Tahoe"
 // };
 // for(obj in myLaptop){
-//     console.log(`თვისება ${obj} არის: ${myLaptop[obj]}`);  
+//     console.log(`თვისება ${obj} არის: ${myLaptop[obj]}`);
 // }
 
 // let testResults = [
@@ -459,7 +452,7 @@
 // let currentTry = 1;
 // while(currentTry<=maxRetries){
 //    console.log(`ვუშვებ Payment Test-ს ხელახლა... ცდა ნომერი:${currentTry}`);
-    
+
 //     currentTry++
 // }
 
@@ -488,9 +481,9 @@
 // let withdrawn = 0;      // რამდენი გვაქვს ამ წამს გამოტანილი
 
 // while (withdrawn < targetAmount){
-//     withdrawn += 50 
+//     withdrawn += 50
 //     console.log(`ადმოიცა 50 ლარი. სულ გამოტანილია: ${withdrawn} ლარი`);
- 
+
 // }
 
 // const cart = [
@@ -502,7 +495,6 @@
 
 // let totalToPay = 0;
 // let missingItemsCount = 0;
-
 
 // for (let i =0; i< cart.length; i++){
 //     if(cart[i].inStock === true){
@@ -516,7 +508,7 @@
 
 // let keyboardIndex = cart.findIndex(item=>item.product==="Keyboard")
 
-// if (keyboardIndex !== -1) {    
+// if (keyboardIndex !== -1) {
 //     let keyboard = cart[keyboardIndex];
 //     for (let key in keyboard) {
 //         console.log(`პროდუქტის დეტალი -> ${key}: ${keyboard[key]}`);
@@ -529,54 +521,150 @@
 // while(processingStatus<100){
 //     processingStatus += 25;
 //     console.log(`შეკვეთა მუშავდება... სტატუსი: ${processingStatus}%`);
-    
+
 // }
 
-
 // დავალება 1-ის მონაცემები
-let userProfile = {
-    username: "Lasha_QA",
-    age: 22,
-    city: "Tbilisi",
-    isStudent: true,
-    profession: "QA Automation Engineer"
-};
+// let userProfile = {
+//     username: "Lasha_QA",
+//     age: 22,
+//     city: "Tbilisi",
+//     isStudent: true,
+//     profession: "QA Automation Engineer"
+// };
 
-for(let obj in userProfile){
-    if (typeof userProfile[obj]==="string"){
-        console.log(` ტექსტური მონაცემი -> გასაღები: ${obj}, მნიშვნელობა: ${userProfile[obj]}`);
+// for(let obj in userProfile){
+//     if (typeof userProfile[obj]==="string"){
+//         console.log(` ტექსტური მონაცემი -> გასაღები: ${obj}, მნიშვნელობა: ${userProfile[obj]}`);
+//     }
+// }
+// // დავალება 2-ის მონაცემები
+// let carPrices = {
+//     "BMW M3": 50000,
+//     "Audi RS5": 60000,
+//     "Ford Mustang": 40000
+// };
+
+// for( let obj in carPrices){
+//     carPrices[obj] = carPrices[obj]*0.9
+// }
+// console.log(carPrices)
+
+// let examScores = {
+//     math: 45,
+//     english: 90,
+//     programming: 98,
+//     history: 75
+// };
+
+// let highestScore = 0;
+// let bestSubject = "";
+// let passedExamsCount = 0;
+
+// for (let obj in examScores){
+//     if (examScores[obj]>=50){
+//         passedExamsCount++
+//     }
+//      if(highestScore<examScores[obj]){
+//         highestScore = examScores[obj]
+//         bestSubject = obj
+//     }
+// }
+// console.log(`ჩაბარებული გამოცდების რაოდენობა: ${passedExamsCount}. საუკეთესო საგანია ${bestSubject}  - ${highestScore} ქულით.`);
+
+// let roomArea = calculateArea (10, 5);
+
+// function calculateArea(length, width){
+//     return length * width
+// }
+// console.log(roomArea);
+
+// let calculateDiscount = function(price, discount){
+//     return price - discount
+// }
+// console.log(calculateDiscount(100,20))
+
+// function showSuccessMessage(){
+//     console.log(`ფაილი წარმატებით გადმოიწერა!`);
+// }
+// function downloadFile(fileName, callback){
+//     console.log(`ვიწყებ გადმოწერას: ${fileName}...`);
+//    callback()
+// }
+
+// downloadFile("movie.mp4", showSuccessMessage)
+
+// function add(a,b){
+//     return a+b
+// }
+// function multiply(a,b){
+//     return a*b
+// }
+// function calculator( num1, num2, operation){
+//     return operation(num1, num2)
+// }
+// console.log( calculator(10, 5, add));
+// console.log( calculator(10, 5, multiply));
+
+let products = [
+  { name: "Laptop", price: 1500 },
+  { name: "Mouse", price: 40 },
+  { name: "Keyboard", price: 120 },
+  { name: "Monitor", price: 800 },
+];
+
+function filterProducts(arr, callback) {
+  const result = [];
+  for (let obj of products) {
+    if (callback(obj)) {
+      result.push(obj);
+    }
+  }
+  console.log(result);
+  
+}
+function isCheap(item){
+    console.log(item);
+    
+    if(item.price < 100){
+        return true 
     }
 }
-// დავალება 2-ის მონაცემები
-let carPrices = {
-    "BMW M3": 50000,
-    "Audi RS5": 60000,
-    "Ford Mustang": 40000
-};
-
-for( let obj in carPrices){
-    carPrices[obj] = carPrices[obj]*0.9
-}
-console.log(carPrices)
-
-let examScores = {
-    math: 45,
-    english: 90,
-    programming: 98,
-    history: 75
-};
-
-let highestScore = 0;
-let bestSubject = "";
-let passedExamsCount = 0;
-
-for (let obj in examScores){
-    if (examScores[obj]>=50){
-        passedExamsCount++
-    }
-     if(highestScore<examScores[obj]){
-        highestScore = examScores[obj]
-        bestSubject = obj
+function isPremium(item){
+    if(item.price>=800){ 
+        return true
     }
 }
-console.log(`ჩაბარებული გამოცდების რაოდენობა: ${passedExamsCount}. საუკეთესო საგანია ${bestSubject}  - ${highestScore} ქულით.`);
+filterProducts(products,isPremium);
+
+
+let salaries = [1000, 1500, 2000, 800];
+
+function transformSalaries(arr, callback) {
+    let newSalaries = []; // 1. Added 'let'
+    
+    // 2. Used 'of' instead of 'in', and looped over 'arr' instead of 'salaries'
+    for (let amount of arr) {   
+        // 3. Passed the current item to the callback before pushing
+        newSalaries.push(callback(amount)); 
+    }
+    
+    return newSalaries; // 4. Returned the final array
+}
+
+function addBonus(amount) {
+    return amount + 200;
+}
+
+function deductTax(amount) {
+    return amount * 0.8;
+}
+
+// Test the function
+let salariesWithBonus = transformSalaries(salaries, addBonus);
+console.log(salariesWithBonus); 
+// Output: [1200, 1700, 2200, 1000]
+
+let salariesAfterTaxes = transformSalaries(salaries, deductTax);
+console.log(salariesAfterTaxes); 
+// Output: [800, 1200, 1600, 640]
