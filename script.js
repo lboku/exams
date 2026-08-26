@@ -606,65 +606,207 @@
 // console.log( calculator(10, 5, add));
 // console.log( calculator(10, 5, multiply));
 
-let products = [
-  { name: "Laptop", price: 1500 },
-  { name: "Mouse", price: 40 },
-  { name: "Keyboard", price: 120 },
-  { name: "Monitor", price: 800 },
-];
+// function calculate (x,y, operation){
+//     return operation(x,y)
+// }
+// function add(x,y){
+//     return x+y
+// }
+// function multiply(x,y){
+//     return x*y
+// }
+// console.log(calculate(2,3,add));
+// console.log(calculate(2,3,multiply));
 
-function filterProducts(arr, callback) {
-  const result = [];
-  for (let obj of products) {
-    if (callback(obj)) {
-      result.push(obj);
-    }
-  }
-  console.log(result);
+// function downloadFile(fileName, callback) {
+//   console.log(`ვიწყებ ფაილის გადმოწერას: ${fileName}...`);
+//   setTimeout(() => {
+//     callback(fileName);
+//   }, 3000);
+// }
+
+// function onDownloadComplete(name, callback) {
+//   console.log(`✅ ფაილი ${name} წარმატებით გადმოიწერა!`);
   
-}
-function isCheap(item){
-    console.log(item);
+// }
+// downloadFile("javascript_tutorial.pdf", onDownloadComplete);
+
+
+
+// // // }
+
+
+// function gela2(name3, name2, name1, callback) {
+//     if(name3 === 4) {
+//         callback(name3,name2, name1)
+//     }
+// }
+
+// gela2(1,2,23,{})
+
+// function saygoodbye(nika1, nika2, nika3){
+//     console.log("ნახვამდის, სასიამოვნო იყო შეხვედრა!");
+// }
+
+
+// function greet(name, callback){
+//     console.log(`გამარჯობა, ${name}!`);
+//     callback()
+// }
+// greet("ლაშა",saygoodbye)
+
+// function addCoffee(){
+//     console.log("ყავა ჩავყარე ჭიქაში, მზადაა!");   
+// }
+
+// function boilWater(callback){
+// console.log("წყალი დუღს... წყალი ადუღდა!");
+// callback()
+// }
+// boilWater(addCoffee)
+
+
+// function printResult(result){
+//     console.log(`საბოლოო პასუხია: ${result}`);
+// }
+
+// function doMath(a, b, callback){
+//     let sum = a + b
+//     callback(sum)
+// }
+// doMath(10, 5, printResult)
+
+// function sendEmail(email){
+//     console.log(`დასტურის მეილი გაიგზავნა მისამართზე: ${email}`);
+
+// }
+// function registerUser(email, callback){
+//     console.log("ანგარიში წარმატებით შეიქმნა!");
+//     callback(email)
+// }
+// registerUser('lasha@gmail.com',sendEmail)
+
+// function takeUmbrella(){
+//     console.log("ყურადღება! გარეთ წვიმს, არ დაგავიწყდეს ქოლგა!");
     
-    if(item.price < 100){
-        return true 
+// }
+
+// function checkWeather(weatherType, callback){
+//     if (weatherType === "წვიმა"){
+//         callback()
+//     }
+//     else(
+//         console.log("კარგი ამინდია, შეგიძლია გაისეირნო!")
+//     )
+// }
+// checkWeather("წვიმა", takeUmbrella)
+
+// function makeLoud(text){
+//     console.log(text + "!!!");
+// }
+// function makeQuiet(text){
+// console.log(text + "...");
+
+// }
+// function robotSpeak(word, callback){
+// callback(word)
+// }
+// robotSpeak("გამარჯობა", makeLoud)
+// robotSpeak("გამარჯობა", makeQuiet)
+
+function processNumbers(numbers,callback){
+    for (let obj in numbers){
+    callback(numbers[obj])
     }
 }
-function isPremium(item){
-    if(item.price>=800){ 
-        return true
+
+function odd(numbers){
+console.log(numbers % 2 == 0 ? `${numbers} ლუწია` : `${numbers} კენტია` );
+}
+processNumbers([1, 2, 7, 8],odd)
+
+
+
+function checkStudents(students, callback){
+    for (let obj in students){
+        callback(students[obj])
     }
 }
-filterProducts(products,isPremium);
+checkStudents([
+  { name: "Nika", score: 85 },
+  { name: "Giorgi", score: 45 },
+  { name: "Ana", score: 72 }
+], checkscore)
 
-
-let salaries = [1000, 1500, 2000, 800];
-
-function transformSalaries(arr, callback) {
-    let newSalaries = []; // 1. Added 'let'
-    
-    // 2. Used 'of' instead of 'in', and looped over 'arr' instead of 'salaries'
-    for (let amount of arr) {   
-        // 3. Passed the current item to the callback before pushing
-        newSalaries.push(callback(amount)); 
+function checkscore(students){
+    if(students.score>= 51){
+        console.log(`${students.name} passed`);
+    }else{
+        console.log(`${students.name} failed`);
     }
-    
-    return newSalaries; // 4. Returned the final array
 }
 
-function addBonus(amount) {
-    return amount + 200;
+
+function checkPrices(prices, callback){
+    for(let obj in prices){
+        callback(prices[obj])
+    }
 }
 
-function deductTax(amount) {
-    return amount * 0.8;
+checkPrices([10, 55, 120, 30, 200],expense)
+
+function expense(price){
+    if (price >= 100){
+        console.log("expensive");
+        }else{
+            console.log("cheap");
+        }
 }
 
-// Test the function
-let salariesWithBonus = transformSalaries(salaries, addBonus);
-console.log(salariesWithBonus); 
-// Output: [1200, 1700, 2200, 1000]
 
-let salariesAfterTaxes = transformSalaries(salaries, deductTax);
-console.log(salariesAfterTaxes); 
-// Output: [800, 1200, 1600, 640]
+
+let arr = []
+function filterNumbers(numbers, callback){
+    for(let obj in numbers){
+        callback(numbers[obj])
+    }
+}
+
+filterNumbers([10, 60, 25, 90, 100], more);
+function more(number){
+    if(number>50){
+        arr.push(number)
+    }
+}
+console.log(arr);
+
+
+console.log( typeof true);
+function processUsers(users, callback){
+    for (let obj in users){
+        callback(users[obj])
+    }
+}
+
+processUsers( [ { name: "Nika", age: 22, active: true },
+  { name: "Gio", age: 27, active: "true" },
+  { name: "Ana", age: 25, active: false }
+],aboutUser)
+
+function aboutUser(users){
+    if (typeof users.name == "string" && typeof users.age == "number" && typeof users.active == "boolean" )
+        {if(users.active === true && users.age >= 18 ){
+        console.log(`${users.name} can enter`);
+    } else if (users.active === false ){
+        console.log(`${users.name} is inactive`);
+        
+    }else{
+        console.log(`${users.name} is too young`);
+        
+    }
+
+    }else {
+        console.log(" ტიპი არასწორია");
+        
+    }
+}
