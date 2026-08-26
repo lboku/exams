@@ -810,3 +810,57 @@ function aboutUser(users){
         
     }
 }
+
+let userName = "Admin";
+
+function checkUser() {
+    let userName = "TestUser";
+    console.log("ფუნქციის შიგნით:", userName);
+}
+
+checkUser();
+console.log("ფუნქციის გარეთ:", userName);
+
+// ფუნქციის შიგნით: TestUser
+// ფუნქციის გარეთ: Admin
+
+// function setupTestEnvironment() {
+//     let env = "QA";
+    
+//     if (env === "QA") {
+//         let apiUrl = "https://qa.api.com";
+//         var timeout = 5000;
+
+//     }
+//     console.log(apiUrl);
+//     console.log(timeout);
+
+    
+// }
+// setupTestEnvironment();
+//let არის ბლოქსკოუპი და არ გადის ბლოკის გარეთ ვარ არის გლობალ სცოპე და გადის ბლოკის გარეთ  
+
+let testPassed = false;
+function runTest() {
+    testPassed = true; // ტესტი წარმატებით დასრულდა
+}
+runTest();
+console.log("Test Status:", testPassed);
+
+let mainRole = "SuperAdmin";
+
+function getRole() {
+    let currentRole = "Editor";
+    
+    function printRoles() {
+        let tempRole = "Guest";
+        console.log(mainRole, currentRole, tempRole); // SuperAdmin
+    }
+    
+    printRoles();
+    // console.log(tempRole); // ხაზი 9
+}
+
+getRole();
+
+length
