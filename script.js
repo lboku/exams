@@ -968,10 +968,10 @@
 
 // function twoSum(nums, target) {
 //     const numObj = {};
-    
+
 //     for (let i = 0; i < nums.length; i++) {
 //         const complement = target - nums[i];
-        
+
 //         if (complement in numObj) {
 //             return [numObj[complement], i];
 //         }
@@ -981,7 +981,6 @@
 // }
 // twoSum(nums, target);
 
- 
 // let testCases = ["Login", "Signup", "Logout"];
 
 // // 'test' იქნება თითოეული ელემენტი რიგრიგობით
@@ -989,32 +988,123 @@
 //     console.log(`ეშვება ტესტი: ${test}`);
 // }
 
-let numbers = [10, 20, 30, 40, 50];
+// let numbers = [10, 20, 30, 40, 50];
 
-for(let i = numbers.length-1; i >= 0; i--){
-    console.log(numbers[i]);   
-}
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//   console.log(numbers[i]);
+// }
 
-let logs = ["OK", "OK", "Warning", "Error", "OK"];
-for (let obj of logs){
-    if(obj === "Error"){ 
-        console.log("ნაპოვნია ერორი!", obj);
-        break
-    }
-}
-let apiResponse = {
-    status: 200,
-    message: "Success",
-    userId: 105,
-    token: "abc123xyz",
-    responseTime: 45
-};
+// let logs = ["OK", "OK", "Warning", "Error", "OK"];
+// for (let obj of logs) {
+//   if (obj === "Error") {
+//     console.log("ნაპოვნია ერორი!", obj);
+//     break;
+//   }
+// }
+// let apiResponse = {
+//   status: 200,
+//   message: "Success",
+//   userId: 105,
+//   token: "abc123xyz",
+//   responseTime: 45,
+// };
 
-for (let obj in apiResponse){
-    // console.log(apiResponse[obj]);
+// for (let obj in apiResponse) {
+//   // console.log(apiResponse[obj]);
+
+//   if (typeof apiResponse[obj] === "number") {
+//     console.log(`ნამებერ ტიპის მონაცემებია ${apiResponse[obj]}`);
+//   }
+// }
+
+// let grid = [
+//   ["OK", "OK", "OK"],
+//   ["OK", "BUG", "OK"],
+//   ["OK", "OK", "OK"],
+// ];
+
+// for (let i = 0; i < grid.length; i++) {
+//   for (let x = 0; x < grid[i].length; x++) {
+//     if (grid[i][x].toLowerCase() === "BUG".toLowerCase()) {
+//       console.log(`ბაგი ნაპოვნია! რიგი: ${i}, სვეტი: ${x}`);
+//     }
+//   }
+// }
+
+// let testResults = [
+//   { testName: "Login", status: "Passed", duration: 120 },
+//   { testName: "Signup", status: "Failed", duration: 300 },
+//   { testName: "Profile", status: "Passed", duration: 80 },
+//   { testName: "Logout", status: "Passed", duration: 50 },
+// ];
+
+// let totalPassedTime = 0;
+
+// for ( let obj of testResults){
+//     console.log(obj);
+//     if (obj.status === "Passed"){
+//         totalPassedTime += obj.duration
+//     }
     
-    if(typeof apiResponse[obj] === "number"){
-        console.log(`ნამებერ ტიპის მონაცემებია ${apiResponse[obj]}`);
-    }
-}
+// }
+// console.log(`წარმატებული ტესტების ჯამური დროა: ${totalPassedTime}`);
 
+
+// let apiData = {
+//     username: "lasha_qa",
+//     permissions: ["read", "write", "execute"],
+//     isActive: true,
+//     failedLogins: [162334, 162355]
+// };
+
+// for (obj in apiData){
+//     if(Array.isArray(apiData[obj])){
+//     console.log(apiData[obj].length);
+//     }else{
+//         console.log(apiData[obj]);
+        
+//     }
+// }
+// let raw = ""
+// for(let i= 0; i<5; i++){
+//     raw+="*"
+//     console.log(raw);   
+// }
+// for ( let i = 5; i > 0; i-- ){
+//     let second = raw.slice(0,i)
+//     console.log(second);
+// }
+// for (let i = 5; i > 0; i--){
+//     num = ""
+//     for ( let x = 0; x < i; x++){
+//         num+=i.toString()
+//     }
+//     console.log(num);
+// }
+
+
+// for(let i = 5; i > 0; i-- ){
+//     let space =""
+//     for (let x = 0; x<i; x++){
+//          space += " "
+//         }
+//         let aster = "*"
+//         for(let y = 5; y>i; y--){
+//             aster+="**"
+//         }
+//         console.log(space+aster);
+// }
+let num = 0
+for(let i = 0; i < 5; i++){
+    let space = ""
+    let space1= "" 
+    for(let x = 5; x > i; x-- ){
+       space+= "."
+       space1+=x-i
+    }
+    num++ 
+    for(let y = 5; y > i ; y-- ){
+
+    }
+    console.log(space+num);
+    }
