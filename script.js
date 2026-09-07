@@ -627,14 +627,11 @@
 
 // function onDownloadComplete(name, callback) {
 //   console.log(`✅ ფაილი ${name} წარმატებით გადმოიწერა!`);
-  
+
 // }
 // downloadFile("javascript_tutorial.pdf", onDownloadComplete);
 
-
-
 // // // }
-
 
 // function gela2(name3, name2, name1, callback) {
 //     if(name3 === 4) {
@@ -648,7 +645,6 @@
 //     console.log("ნახვამდის, სასიამოვნო იყო შეხვედრა!");
 // }
 
-
 // function greet(name, callback){
 //     console.log(`გამარჯობა, ${name}!`);
 //     callback()
@@ -656,7 +652,7 @@
 // greet("ლაშა",saygoodbye)
 
 // function addCoffee(){
-//     console.log("ყავა ჩავყარე ჭიქაში, მზადაა!");   
+//     console.log("ყავა ჩავყარე ჭიქაში, მზადაა!");
 // }
 
 // function boilWater(callback){
@@ -664,7 +660,6 @@
 // callback()
 // }
 // boilWater(addCoffee)
-
 
 // function printResult(result){
 //     console.log(`საბოლოო პასუხია: ${result}`);
@@ -688,7 +683,7 @@
 
 // function takeUmbrella(){
 //     console.log("ყურადღება! გარეთ წვიმს, არ დაგავიწყდეს ქოლგა!");
-    
+
 // }
 
 // function checkWeather(weatherType, callback){
@@ -714,119 +709,113 @@
 // robotSpeak("გამარჯობა", makeLoud)
 // robotSpeak("გამარჯობა", makeQuiet)
 
-function processNumbers(numbers,callback){
-    for (let obj in numbers){
-    callback(numbers[obj])
-    }
-}
+// function processNumbers(numbers,callback){
+//     for (let obj in numbers){
+//     callback(numbers[obj])
+//     }
+// }
 
-function odd(numbers){
-console.log(numbers % 2 == 0 ? `${numbers} ლუწია` : `${numbers} კენტია` );
-}
-processNumbers([1, 2, 7, 8],odd)
+// function odd(numbers){
+// console.log(numbers % 2 == 0 ? `${numbers} ლუწია` : `${numbers} კენტია` );
+// }
+// processNumbers([1, 2, 7, 8],odd)
 
+// function checkStudents(students, callback){
+//     for (let obj in students){
+//         callback(students[obj])
+//     }
+// }
+// checkStudents([
+//   { name: "Nika", score: 85 },
+//   { name: "Giorgi", score: 45 },
+//   { name: "Ana", score: 72 }
+// ], checkscore)
 
+// function checkscore(students){
+//     if(students.score>= 51){
+//         console.log(`${students.name} passed`);
+//     }else{
+//         console.log(`${students.name} failed`);
+//     }
+// }
 
-function checkStudents(students, callback){
-    for (let obj in students){
-        callback(students[obj])
-    }
-}
-checkStudents([
-  { name: "Nika", score: 85 },
-  { name: "Giorgi", score: 45 },
-  { name: "Ana", score: 72 }
-], checkscore)
+// function checkPrices(prices, callback){
+//     for(let obj in prices){
+//         callback(prices[obj])
+//     }
+// }
 
-function checkscore(students){
-    if(students.score>= 51){
-        console.log(`${students.name} passed`);
-    }else{
-        console.log(`${students.name} failed`);
-    }
-}
+// checkPrices([10, 55, 120, 30, 200],expense)
 
+// function expense(price){
+//     if (price >= 100){
+//         console.log("expensive");
+//         }else{
+//             console.log("cheap");
+//         }
+// }
 
-function checkPrices(prices, callback){
-    for(let obj in prices){
-        callback(prices[obj])
-    }
-}
+// let arr = []
+// function filterNumbers(numbers, callback){
+//     for(let obj in numbers){
+//         callback(numbers[obj])
+//     }
+// }
 
-checkPrices([10, 55, 120, 30, 200],expense)
+// filterNumbers([10, 60, 25, 90, 100], more);
+// function more(number){
+//     if(number>50){
+//         arr.push(number)
+//     }
+// }
+// console.log(arr);
 
-function expense(price){
-    if (price >= 100){
-        console.log("expensive");
-        }else{
-            console.log("cheap");
-        }
-}
+// console.log( typeof true);
+// function processUsers(users, callback){
+//     for (let obj in users){
+//         callback(users[obj])
+//     }
+// }
 
+// processUsers( [ { name: "Nika", age: 22, active: true },
+//   { name: "Gio", age: 27, active: "true" },
+//   { name: "Ana", age: 25, active: false }
+// ],aboutUser)
 
+// function aboutUser(users){
+//     if (typeof users.name == "string" && typeof users.age == "number" && typeof users.active == "boolean" )
+//         {if(users.active === true && users.age >= 18 ){
+//         console.log(`${users.name} can enter`);
+//     } else if (users.active === false ){
+//         console.log(`${users.name} is inactive`);
 
-let arr = []
-function filterNumbers(numbers, callback){
-    for(let obj in numbers){
-        callback(numbers[obj])
-    }
-}
+//     }else{
+//         console.log(`${users.name} is too young`);
 
-filterNumbers([10, 60, 25, 90, 100], more);
-function more(number){
-    if(number>50){
-        arr.push(number)
-    }
-}
-console.log(arr);
+//     }
 
+//     }else {
+//         console.log(" ტიპი არასწორია");
 
-console.log( typeof true);
-function processUsers(users, callback){
-    for (let obj in users){
-        callback(users[obj])
-    }
-}
+//     }
+// }
 
-processUsers( [ { name: "Nika", age: 22, active: true },
-  { name: "Gio", age: 27, active: "true" },
-  { name: "Ana", age: 25, active: false }
-],aboutUser)
+// let userName = "Admin";
 
-function aboutUser(users){
-    if (typeof users.name == "string" && typeof users.age == "number" && typeof users.active == "boolean" )
-        {if(users.active === true && users.age >= 18 ){
-        console.log(`${users.name} can enter`);
-    } else if (users.active === false ){
-        console.log(`${users.name} is inactive`);
-        
-    }else{
-        console.log(`${users.name} is too young`);
-        
-    }
+// function checkUser() {
+//     let userName = "TestUser";
+//     console.log("ფუნქციის შიგნით:", userName);
+// }
 
-    }else {
-        console.log(" ტიპი არასწორია");
-        
-    }
-}
-
-let userName = "Admin";
-
-function checkUser() {
-    let userName = "TestUser";
-    console.log("ფუნქციის შიგნით:", userName);
-}
-
-checkUser();
-console.log("ფუნქციის გარეთ:", userName);
+// checkUser();
+// console.log("ფუნქციის გარეთ:", userName);
 
 // ფუნქციის შიგნით: TestUser
 // ფუნქციის გარეთ: Admin
 
 // function setupTestEnvironment() {
 //     let env = "QA";
-    
+
 //     if (env === "QA") {
 //         let apiUrl = "https://qa.api.com";
 //         var timeout = 5000;
@@ -835,32 +824,197 @@ console.log("ფუნქციის გარეთ:", userName);
 //     console.log(apiUrl);
 //     console.log(timeout);
 
-    
 // }
 // setupTestEnvironment();
-//let არის ბლოქსკოუპი და არ გადის ბლოკის გარეთ ვარ არის გლობალ სცოპე და გადის ბლოკის გარეთ  
+//let არის ბლოქსკოუპი და არ გადის ბლოკის გარეთ ვარ არის გლობალ სცოპე და გადის ბლოკის გარეთ
 
-let testPassed = false;
-function runTest() {
-    testPassed = true; // ტესტი წარმატებით დასრულდა
-}
-runTest();
-console.log("Test Status:", testPassed);
+// let testPassed = false;
+// function runTest() {
+//     testPassed = true; // ტესტი წარმატებით დასრულდა
+// }
+// runTest();
+// console.log("Test Status:", testPassed);
 
-let mainRole = "SuperAdmin";
+// let mainRole = "SuperAdmin";
 
-function getRole() {
-    let currentRole = "Editor";
+// function getRole() {
+//     let currentRole = "Editor";
+
+//     function printRoles() {
+//         let tempRole = "Guest";
+//         console.log(mainRole, currentRole, tempRole); // SuperAdmin editor Guest
+//     }
+
+//     printRoles();
+//     // console.log(tempRole); // ხაზი 9  არაფერს არ დაბეჭდავს
+// }
+
+// getRole();
+
+// function createGreeting(sayhello) {
+//     // ვაბრუნებთ შიდა ფუნქციას, რომელიც ელოდება სახელს
+//     return function(name) {
+//         // შიდა ფუნქცია იყენებს 'name'-ს (თავის პარამეტრს)
+//         // და 'greetingType'-ს (მშობელი ფუნქციის პარამეტრს)
+//         return `${sayHello} ${name}`;
+//     }
+// }
+
+// let sayHello = "გამარჯობა"
+// let sayHi = "hi"
+
+// let response = createGreeting(sayHello)("lasha"); // გამარჯობა ლაშა
+// // console.log(sayHi("Ana"));     // Hi Ana
+// console.log(response);
+
+// function createGreeting(greetingType) {
+
+//     return function(name) {
+
+//         return `${greetingType} ${name}`;
+//     }
+// }
+
+// let sayHello = createGreeting("გამარჯობა");
+// let sayHi = createGreeting("Hi");
+// console.log(sayHello("ლაშა"));
+
+// function createIdGenerator(prefix) {
+//     let count = 0
+//     return function(){
+//         count++
+//         return `${prefix} ${count}`
+
+//     }
+// }
+
+// let generateTestId = createIdGenerator("TEST-");
+// let generateBugId = createIdGenerator("BUG-");
+
+// console.log(generateTestId()); // უნდა დაბეჭდოს: TEST-1
+// console.log(generateTestId()); // უნდა დაბეჭდოს: TEST-2
+
+// console.log(generateBugId());  // უნდა დაბეჭდოს: BUG-1
+// console.log(generateTestId()); // უნდა დაბეჭდოს: TEST-3
+
+// function createBankAccount(initialBalance) {
+//     let balance = initialBalance; // ეს ფარული ცვლადია
+
+//     return {
+//         // თანხის შეტანა
+//         deposit: function(amount) {
+//             balance+=amount
+//             return `შეტანილია ${amount}. მიმდინარე ბალანსი: ${balance}`
+//         },
+//         // თანხის გამოტანა
+//         withdraw: function(amount) {
+//             if (amount > balance){
+//                 return "არასაკმარისი თანხა"
+//             }else{
+//                 balance-=amount
+//                 return  `გამოტანილია ${amount}. მიმდინარე ბალანსი: ${balance}`
+//             }
+
+//         },
+
+//         getBalance: function() {
+//             return balance;
+//         }
+//     };
+// }
+
+// let myAccount = createBankAccount(100);
+
+// console.log(myAccount.deposit(50)); // შეტანილია 50. მიმდინარე ბალანსი: 150
+// console.log(myAccount.withdraw(200)); // არასაკმარისი თანხა
+// console.log(myAccount.withdraw(30)); // გამოტანილია 30. მიმდინარე ბალანსი: 120
+// console.log(myAccount.getBalance()); // 120
+
+// function createRetryLimiter(maxRetries) {
+//     let attempts = 0;
+
+//     return function() {
+//         attempts++
+//         if (attempts <= maxRetries ){
+//             return `ცდა ${attempts} დაშვებულია `
+//         }else{
+//             return `ლიმიტი ამოწურულია!`
+//         }
+
+//     }
+// }
+
+// let apiRetry = createRetryLimiter(3);
+// console.log(apiRetry()); // ცდა 1 დაშვებულია
+// console.log(apiRetry()); // ცდა 2 დაშვებულია
+// console.log(apiRetry()); // ცდა 3 დაშვებულია
+// console.log(apiRetry()); // ლიმიტი ამოწურულია!
+
+// function createDiscount(discount) {
+//     return function(price){
+//        return price * (100 - discount) / 100
+//     }
+
+// }
+
+// let twentyPercentOff = createDiscount(20);
+// let fiftyPercentOff = createDiscount(50);
+
+// console.log(twentyPercentOff(100)); // 80 (ანუ 100-ს მინუს 20%)
+// console.log(fiftyPercentOff(200)); // 100 (ანუ 200-ს მინუს 50%)
+
+// let nums = [2, 7, 11, 15];
+// let target = 9;
+
+// function twoSum(nums, target) {
+//     const numObj = {};
     
-    function printRoles() {
-        let tempRole = "Guest";
-        console.log(mainRole, currentRole, tempRole); // SuperAdmin
+//     for (let i = 0; i < nums.length; i++) {
+//         const complement = target - nums[i];
+        
+//         if (complement in numObj) {
+//             return [numObj[complement], i];
+//         }
+
+//         numObj[nums[i]] = i;
+//     }
+// }
+// twoSum(nums, target);
+
+ 
+// let testCases = ["Login", "Signup", "Logout"];
+
+// // 'test' იქნება თითოეული ელემენტი რიგრიგობით
+// for (let test of testCases) {
+//     console.log(`ეშვება ტესტი: ${test}`);
+// }
+
+let numbers = [10, 20, 30, 40, 50];
+
+for(let i = numbers.length-1; i >= 0; i--){
+    console.log(numbers[i]);   
+}
+
+let logs = ["OK", "OK", "Warning", "Error", "OK"];
+for (let obj of logs){
+    if(obj === "Error"){ 
+        console.log("ნაპოვნია ერორი!", obj);
+        break
     }
+}
+let apiResponse = {
+    status: 200,
+    message: "Success",
+    userId: 105,
+    token: "abc123xyz",
+    responseTime: 45
+};
+
+for (let obj in apiResponse){
+    // console.log(apiResponse[obj]);
     
-    printRoles();
-    // console.log(tempRole); // ხაზი 9
+    if(typeof apiResponse[obj] === "number"){
+        console.log(`ნამებერ ტიპის მონაცემებია ${apiResponse[obj]}`);
+    }
 }
 
-getRole();
-
-length
