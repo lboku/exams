@@ -1045,10 +1045,9 @@
 //     if (obj.status === "Passed"){
 //         totalPassedTime += obj.duration
 //     }
-    
+
 // }
 // console.log(`წარმატებული ტესტების ჯამური დროა: ${totalPassedTime}`);
-
 
 // let apiData = {
 //     username: "lasha_qa",
@@ -1062,13 +1061,13 @@
 //     console.log(apiData[obj].length);
 //     }else{
 //         console.log(apiData[obj]);
-        
+
 //     }
 // }
 // let raw = ""
 // for(let i= 0; i<5; i++){
 //     raw+="*"
-//     console.log(raw);   
+//     console.log(raw);
 // }
 // for ( let i = 5; i > 0; i-- ){
 //     let second = raw.slice(0,i)
@@ -1082,7 +1081,6 @@
 //     console.log(num);
 // }
 
-
 // for(let i = 5; i > 0; i-- ){
 //     let space =""
 //     for (let x = 0; x<i; x++){
@@ -1094,17 +1092,85 @@
 //         }
 //         console.log(space+aster);
 // }
-let num = 0
-for(let i = 0; i < 5; i++){
-    let space = ""
-    let space1= "" 
-    for(let x = 5; x > i; x-- ){
-       space+= "."
-       space1+=x-i
-    }
-    num++ 
-    for(let y = 5; y > i ; y-- ){
+//  let num = 0;
+// for (let a = 0; a < 5; a++) {
+//   let space = "";
+//   let between = "";
+//   for (let b = 5; b > a; b--) {
+//     space += " ";
+//   }
+//   for (let e = 0; e < a * 2 - 1; e++) {
+//     between += " ";
+//   }
+//   num++;
+//   if (num > 1) {
+//     console.log(space + num + between + num);
+//   } else {
+//     console.log(space + num + between);
+//   }
+// }
 
-    }
-    console.log(space+num);
-    }
+// let space1 = " ";
+// let num1 = 5;
+// for (let d = 0; d < 4; d++) {
+//     let between1 = "";
+//   space1 += " ";
+//   num1--;
+//   for (let f = 5; f > d * 2 - 1; f--) {
+//     between1 += " ";
+//   }
+//   between1 = between1.slice(0, -1);
+//   if (num1 > 1) {
+//     console.log(space1 + num1 + between1 + num1);
+//   } else {
+//     console.log(space1 + num1 + between1);
+//   }
+// // }
+// let num =0
+// for(let a =0; a<5; a++){
+//   let space = ""
+//   let between= ""
+//   for (let b = 5; b>a; b--){
+//     space+= " "
+//   }
+//   for(let c = 0; c < a*2-1; c++ ){
+//     between+= " "
+//   }
+// num++
+// if(num >1 ){
+//   console.log(space+num+between+num);
+// }else{
+//   console.log(space+num+between);
+// }
+// }
+//  let num1 = 5
+//  let space1 =" "
+//  for (let d = 0; d < 4; d++){
+//    let between1= ""
+//    space1+=" "
+//    num1--
+//   for( let e = 5; e > d*2-1; e-- ){
+//     between1+=" "
+//   }
+//   between1 = between1.slice(0, -1);
+//   if (num1 > 1) {
+//     console.log(space1 + num1 + between1 + num1);
+//   } else {
+//     console.log(space1 + num1 + between1);
+//   }
+// }
+
+for (let i = 1; i <= 6; i++) {
+  let row = "";
+
+  for (let s = 1; s <= 6 - i; s++) {
+    row += " ";
+  }
+  for (let j = 1; j <= i; j++) {
+    row += j;
+  }
+  for (let k = i - 1; k >= 1; k--) {
+    row += k;
+  }
+  console.log(row);
+}
