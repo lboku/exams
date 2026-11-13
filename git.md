@@ -90,8 +90,15 @@ ni
 ## ქომიტების გაუქმება
 ```bash
 git reset --soft head~1
-git reset --mixed head~
+git reset --mixed head~1
 git reset --hard head~1
 ```
 
-## ფაილის შექმნა
+## ქომიტებს" შორის გადაადგილება
+```bash
+git checkout
+```
+## მთავარ შტოზე გადაადგილება
+```bash
+git switch main
+```
